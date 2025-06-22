@@ -83,6 +83,7 @@ nav a {
 #contact {
   padding-top: 10px; /* tighter spacing */
   margin-top: 40px; /* pull it upward */
+  padding-bottom: 60px; 
 }
 
 #contact form {
@@ -443,4 +444,25 @@ nav a:hover .linkedin-icon {
     font-size: 1rem;
   }
 }
+
+.direct-email {
+  text-align: left; /* aligns button to the left */
+  margin-top: 30px; /* adds space between form and email link */
+}
+
+.email-button {
+  display: inline-block;
+  background-color: #1a2a47;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.email-button:hover {
+  background-color: #324d75;
+}
+
 
