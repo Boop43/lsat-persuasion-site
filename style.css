@@ -1,0 +1,345 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #24374e;
+  color: #ffffff;
+}
+
+
+/* Logo + Header Layout */
+header {
+  background-color: #a7c0d7;
+  color: rgb(30, 52, 82);
+  padding: 0px 30px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 190px; /* space between logo and nav */
+}
+
+
+.logo img {
+  height: 120px;
+  margin-left: 0px; /*  moves the logo farther left */
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem; /*  removed the invalid space between number and unit */
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+}
+
+/* Nav links */
+nav {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-top: -5px; /*  raises nav links slightly */
+}
+
+nav a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-family: 'Playfair Display', serif;
+}
+
+
+.hero {
+  background: #a7c0d7;
+  padding: 100px 40px;
+  text-align: left;
+}
+.hero h2 {
+  font-size: 3.2rem;
+  margin-bottom: 20px;
+  margin-top: -20px;
+}
+.hero p {
+  font-size: 1.3rem;
+  margin-bottom: 50px;
+}
+.button {
+  background-color: #1a2a47;
+  color: rgb(255, 255, 255);
+  padding: 12px 24px;
+  border: none;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+}
+.section {
+  padding: 70px 50px;
+  max-width: 880px;
+  margin: auto;
+}
+
+#contact {
+  padding-top: 10px; /* tighter spacing */
+  margin-top: 40px; /* pull it upward */
+}
+
+#contact form {
+  margin-top: 30px; /* ⬅ pushes the form down */
+}
+
+form label {
+  display: block;
+  margin-bottom: 1px;  /* space between label and input */
+  font-size: 1rem;      /* optional: adjust text size */
+}
+
+form input,
+form textarea {
+  margin-bottom: 30px;
+  height: 50px; /* ⬅️ Add this to make boxes taller */
+  padding: 10px; /* Optional: more inner spacing */
+  font-size: 1rem; /* Optional: make text size match the height */
+}
+
+
+
+
+.section h2 {
+  font-size: 1.8rem;
+  margin-bottom: -10px;
+}
+.section p {
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+.quote {
+  background: #1a2a47;              /* <-- light background */
+  font-style: italic;
+  text-align: center;
+  padding: 30px;
+  margin: 40px auto;
+  font-size: 1.2rem;
+  border-left: 4px solid #6a7689;   /* <-- dark border */
+}
+footer {
+  background-color: #ffffff;
+  color: rgb(32, 46, 86);
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}
+
+/* Make header sticky */
+#main-header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Default colors */
+#main-header.scrolled {
+  background-color: white;
+}
+
+#main-header.scrolled nav a {
+  color: #1a2a47; /* dark blue */
+}
+
+#main-header.scrolled {
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Remove rounded edges on form elements */
+input,
+textarea,
+button {
+  border-radius: 0 !important;
+}
+
+.about-container {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.about-image img {
+  width: 300px;
+  height: auto;
+  border-radius: 0; /* removes rounded edges */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+  max-width: 500px;
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  line-height: 1.6;
+  font-size: 1.05rem;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+  }
+
+  .about-text {
+    max-width: 100%;
+  }
+}
+
+.about-wrap {
+  max-width: 880px;
+  margin: auto;
+  padding: 70px 50px;
+}
+
+.wrap-img {
+  float: left;
+  width: 300px;
+  height: auto;
+  margin: 20 30px 20px 0;
+  border-radius: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.about-wrap h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  clear: both;
+}
+
+.about-wrap p {
+  line-height: 1.6;
+  margin-bottom: 16px;
+  font-size: 1.05rem;
+}
+
+/* Make image stack above text on mobile */
+@media (max-width: 768px) {
+  .wrap-img {
+    float: none;
+    display: block;
+    margin:  auto 20px auto;
+    width: 100%;
+    max-width: 350px;
+  }
+}
+
+.services-section {
+  padding: 80px 40px;
+  background-color: #1a2a38;
+  text-align: center;
+  color: #ffffff;
+}
+
+.services-section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 50px;
+  font-family: 'Playfair Display', serif;
+}
+
+.service-cards {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.service-card {
+  background-color: #2c3e50;
+  padding: 30px 25px;
+  border-radius: 8px;
+  width: 300px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  text-align: left;
+}
+
+.service-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  font-family: 'Playfair Display', serif;
+  color: #ffffff;
+}
+
+.service-card .price {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #a7c0d7;
+  margin-bottom: 10px;
+}
+
+.service-card .desc {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #dddddd;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .service-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.linkedin-icon {
+  height: 60px;
+  width: 110px;
+  vertical-align: middle;
+  transition: opacity 0.3s ease;
+}
+
+nav a:hover .linkedin-icon {
+  opacity: 0.7;
+}
+
+.about-heading-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.about-heading-row h2 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.linkedin-connect {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  color: #ffffff;
+  text-decoration: none;
+  gap: 2px;
+  font-weight: 500;
+}
+
+.linkedin-connect img {
+  width: 100px;
+  height: 50px;
+  display: inline-block;
+  object-fit: contain;
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
+.linkedin-connect:hover img {
+  opacity: 0.75;
+}
