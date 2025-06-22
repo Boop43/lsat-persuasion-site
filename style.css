@@ -453,13 +453,15 @@ nav a:hover .linkedin-icon {
 .email-button {
   display: inline-block;
   background-color: #1a2a47;
-  color: white;
-  padding: 10px 20px;
-  font-size: 1rem;
+  color: white; /* makes text white */
+  padding: 14px 28px; /* larger button size */
+  font-size: 1.2rem;   /* larger text */
   text-decoration: none;
   border-radius: 4px;
+  font-weight: bold;
   transition: background-color 0.3s;
 }
+
 
 .email-button:hover {
   background-color: #324d75;
