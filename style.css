@@ -289,6 +289,21 @@ button {
   color: #dddddd;
 }
 
+.desc {
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.fine-print {
+  font-size: 0.75rem;
+  color: #ccc;
+  margin-top: 20px;
+  line-height: 1.4;
+  max-width: 800px;
+}
+
+
+
 /* Responsive layout */
 @media (max-width: 768px) {
   .service-cards {
