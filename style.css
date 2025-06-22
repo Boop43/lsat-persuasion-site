@@ -358,3 +358,89 @@ nav a:hover .linkedin-icon {
 .linkedin-connect:hover img {
   opacity: 0.75;
 }
+
+/* ======= MOBILE RESPONSIVENESS ======= */
+@media (max-width: 768px) {
+  /* Stack logo and nav vertically */
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .logo img {
+    height: 80px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  nav a {
+    font-size: 1rem;
+  }
+
+  /* Stack about section */
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-text {
+    max-width: 100%;
+  }
+
+  /* Float image stacks above text */
+  .wrap-img {
+    float: none;
+    display: block;
+    margin: 0 auto 20px auto;
+    width: 100%;
+    max-width: 350px;
+  }
+
+  /* Stack services vertically */
+  .service-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .service-card {
+    width: 90%;
+  }
+
+  /* Make form fields full width */
+  form {
+    width: 100%;
+  }
+
+  #contact form div {
+    flex-direction: column;
+  }
+
+  #contact input,
+  #contact textarea {
+    width: 100% !important;
+  }
+
+  .button {
+    width: 100%;
+    padding: 14px;
+    font-size: 1rem;
+  }
+
+  /* Adjust headings for small screens */
+  h1, h2, h3 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+
