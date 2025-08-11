@@ -471,4 +471,10 @@ nav a:hover .linkedin-icon {
   background-color: #324d75;
 }
 
+.thin-text {
+  font-weight: 300; /* lighter text */
+}
+
+
+
 
